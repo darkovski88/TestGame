@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/my_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/top" >
+
+    <ImageView
+        android:id="@+id/showcolor"
+        android:layout_width="fill_parent"
+        android:layout_height="10.0dip"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/showcolor"
+        />
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+    <ImageView
+        android:id="@+id/layer1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/layer1"
+        android:visibility="invisible"
+        />
+    <ImageView
+        android:id="@+id/layer2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/layer2"
+        android:visibility="invisible"
+        />
+    <ImageView
+        android:id="@+id/layer3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/layer3"
+        android:visibility="invisible"
+        />
+        <ImageView
+            android:id="@+id/layer4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/layer3"
+            android:visibility="invisible"
+            />
+        <ImageView
+            android:id="@+id/layer5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/layer3"
+            android:visibility="invisible"
+            />
+        <ImageView
+            android:id="@+id/layer6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/layer3"
+            android:visibility="invisible"
+            />
+        <ImageView
+            android:id="@+id/layer7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/layer3"
+            android:visibility="invisible"
+            />
+        <ImageView
+            android:id="@+id/layer8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/layer3"
+            android:visibility="invisible"
+            />
+        <ImageView
+            android:id="@+id/layer9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/layer3"
+            android:visibility="invisible"
+            />
+        <ImageView
+            android:id="@+id/layer10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/layer3"
+            android:visibility="invisible"
+            />
+        </RelativeLayout>
+
+
+
+    <ImageView
+        android:id="@+id/palette"
+        android:layout_width="219dp"
+        android:layout_height="170dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/pallete"
+        />
+
+
+</RelativeLayout>
