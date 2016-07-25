@@ -27,7 +27,7 @@
             android:launchMode="singleTask"
             android:configChanges="orientation|screenSize" />
         <activity
-            android:name="carousel.test.myapplication.StaraKlasaAsync"
+            android:name="carousel.test.myapplication.ImageAreasActivity"
             android:screenOrientation="landscape" />
     </application>
 
