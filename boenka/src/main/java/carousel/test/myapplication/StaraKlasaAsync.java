@@ -54,9 +54,9 @@ public class StaraKlasaAsync extends Activity implements View.OnTouchListener {
 
         relativeLayout = (RelativeLayout) findViewById(R.id.relative);
         relativeLayout.setOnTouchListener(this);
-        paletteImageView = (ImageView) findViewById(R.id.palette);
+//        paletteImageView = (ImageView) findViewById(R.id.palette);
         paletteImageView.setOnTouchListener(this);
-        showColorImageView = (ImageView) findViewById(R.id.showcolor);
+//        showColorImageView = (ImageView) findViewById(R.id.showcolor);
     }
 
     /**
@@ -75,7 +75,7 @@ public class StaraKlasaAsync extends Activity implements View.OnTouchListener {
                 final int evY = (int) ev.getY();
 
                 if (v.getId() == paletteImageView.getId()) {
-                    changeToColor = getHotspotColor(R.id.palette, evX, evY);
+//                    changeToColor = getHotspotColor(R.id.palette, evX, evY);
                     showColorImageView.setBackgroundColor(changeToColor);
                     Log.v("test", "we hit palette color " + changeToColor);
                     if (changeToColor == Color.WHITE || changeToColor == Color.BLACK) {

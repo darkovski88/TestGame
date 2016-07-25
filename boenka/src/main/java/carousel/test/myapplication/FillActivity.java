@@ -34,13 +34,13 @@ public class FillActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.floodfill);
-        ImageView imageView = (ImageView) findViewById(R.id.floodfill);
+//        ImageView imageView = (ImageView) findViewById(R.id.floodfill);
         ImageView imageView1 = (ImageView) findViewById(R.id.colorpal);
         showcolor = (ImageView) findViewById(R.id.showcolor);
         showcolor.setBackgroundColor(replacecolor);
 
         try {
-            imageView.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.top));
+//            imageView.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.painting));
             imageView1.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.pallete));
             imageView1.setOnTouchListener(new View.OnTouchListener() {
                 Bitmap pmap;
@@ -63,6 +63,8 @@ public class FillActivity extends AppCompatActivity {
             });
         } catch (Exception exception) { }
 
+
+        /*
         imageView.setOnTouchListener(new View.OnTouchListener() {
             Bitmap bmap;
             @Override
@@ -86,5 +88,6 @@ public class FillActivity extends AppCompatActivity {
                 return true;
             }
         });
+        */
     }
 }
