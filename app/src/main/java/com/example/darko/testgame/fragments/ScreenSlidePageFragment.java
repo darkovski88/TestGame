@@ -16,7 +16,7 @@ import android.widget.TextView;
 import com.example.darko.testgame.ColisionGameActivity;
 import com.example.darko.testgame.R;
 
-import carousel.test.myapplication.StaraKlasaAsync;
+import carousel.test.myapplication.ImageAreasActivity;
 
 public class ScreenSlidePageFragment extends Fragment {
 
@@ -90,7 +90,7 @@ public class ScreenSlidePageFragment extends Fragment {
                 if(text.equals("Galaxy invaders")) {
                     getActivity().startActivity(new Intent(getActivity(), ColisionGameActivity.class));
                 }else{
-                    getActivity().startActivity(new Intent(getActivity(), StaraKlasaAsync.class));
+                    getActivity().startActivity(new Intent(getActivity(), ImageAreasActivity.class));
                 }
             }
         });
