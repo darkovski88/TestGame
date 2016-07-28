@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,8 +16,7 @@ import android.widget.TextView;
 
 import com.example.darko.testgame.ColisionGameActivity;
 import com.example.darko.testgame.R;
-
-import carousel.test.myapplication.ImageAreasActivity;
+import com.example.darko.testgame.mole.SmashTheMole;
 
 public class ScreenSlidePageFragment extends Fragment {
 
@@ -84,13 +84,21 @@ public class ScreenSlidePageFragment extends Fragment {
         // Show the current page index in the view
         TextView tvIndex = (TextView) rootView.findViewById(R.id.tvIndex);
         tvIndex.setText(String.valueOf(this.text));
+        Log.d("fragment","load "+text);
         rootView.findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(text.equals("Galaxy invaders")) {
-                    getActivity().startActivity(new Intent(getActivity(), ColisionGameActivity.class));
-                }else{
-                    getActivity().startActivity(new Intent(getActivity(), ImageAreasActivity.class));
+                Log.d("fragment","click "+text);
+                switch (text) {
+                    case "Color book":
+//                        getActivity().startActivity(new Intent(getActivity(), StaraKlasaAsync.class));
+                        break;
+                    case "Whack a mole":
+                        getActivity().startActivity(new Intent(getActivity(), SmashTheMole.class));
+                        break;
+                    case "Galaxy invaders":
+                        getActivity().startActivity(new Intent(getActivity(), ColisionGameActivity.class));
+                        break;
                 }
             }
         });
