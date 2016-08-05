@@ -33,6 +33,10 @@
             android:name=".mole.SmashTheMole"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="landscape" />
+        <activity
+            android:name=".nemo.NemoGameActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape" />
     </application>
 
 </manifest>

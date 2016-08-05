@@ -17,6 +17,7 @@ import android.widget.TextView;
 import com.example.darko.testgame.ColisionGameActivity;
 import com.example.darko.testgame.R;
 import com.example.darko.testgame.mole.SmashTheMole;
+import com.example.darko.testgame.nemo.NemoGameActivity;
 
 public class ScreenSlidePageFragment extends Fragment {
 
@@ -84,11 +85,11 @@ public class ScreenSlidePageFragment extends Fragment {
         // Show the current page index in the view
         TextView tvIndex = (TextView) rootView.findViewById(R.id.tvIndex);
         tvIndex.setText(String.valueOf(this.text));
-        Log.d("fragment","load "+text);
+        Log.d("fragment", "load " + text);
         rootView.findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.d("fragment","click "+text);
+                Log.d("fragment", "click " + text);
                 switch (text) {
                     case "Color book":
 //                        getActivity().startActivity(new Intent(getActivity(), StaraKlasaAsync.class));
@@ -98,6 +99,9 @@ public class ScreenSlidePageFragment extends Fragment {
                         break;
                     case "Galaxy invaders":
                         getActivity().startActivity(new Intent(getActivity(), ColisionGameActivity.class));
+                        break;
+                    case "Nemo's bubbles":
+                        getActivity().startActivity(new Intent(getActivity(), NemoGameActivity.class));
                         break;
                 }
             }

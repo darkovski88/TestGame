@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class MainActivity extends FragmentActivity {
-    private static final int NUM_PAGES = 3;
+    private static final int NUM_PAGES = 4;
 
     private ViewPager mPager;
     private ScreenSlidePagerAdapter mPagerAdapter;
@@ -74,6 +74,7 @@ public class MainActivity extends FragmentActivity {
         titles.add("Color book");
         titles.add("Galaxy invaders");
         titles.add("Whack a mole");
+        titles.add("Nemo's bubbles");
         mPager = (ViewPager) findViewById(R.id.main_pager);
         mPagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager(), titles);
         mPager.setAdapter(mPagerAdapter);
